@@ -18,6 +18,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="#inquiry">Inquiry</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -150,6 +152,103 @@
         <div class="cta-buttons">
             <a href="tel:+919876543210" class="btn btn-secondary">📞 Call Immediately</a>
             <a href="https://wa.me/919876543210?text=Hi%20Dr.%20Prasad,%20I%20need%20medical%20consultation" class="btn btn-secondary">💬 WhatsApp Now</a>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="inquiry-section" id="inquiry">
+        <div class="container">
+            <h2>Describe Your Health Concern</h2>
+            <p class="inquiry-subtitle">Tell us about your symptoms or health issue. Dr. Prasad will get back to you with guidance.</p>
+            <div class="inquiry-content">
+                <form class="inquiry-form" id="inquiryForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age" placeholder="Your age" min="1" max="120" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="symptom">Primary Symptom/Problem *</label>
+                        <select id="symptom" name="symptom" required>
+                            <option value="">-- Select your main concern --</option>
+                            <option value="fever">Fever</option>
+                            <option value="cold">Cold & Cough</option>
+                            <option value="headache">Headache</option>
+                            <option value="body-pain">Body Pain</option>
+                            <option value="digestion">Digestion Issue</option>
+                            <option value="blood-pressure">Blood Pressure</option>
+                            <option value="diabetes">Diabetes Related</option>
+                            <option value="infection">Infection</option>
+                            <option value="allergy">Allergy</option>
+                            <option value="other">Other Health Concern</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Describe Your Problem in Detail *</label>
+                        <textarea id="description" name="description" placeholder="Please describe your symptoms, duration, and any other relevant information..." rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="duration">How long have you had this problem? *</label>
+                        <select id="duration" name="duration" required>
+                            <option value="">-- Select duration --</option>
+                            <option value="less-than-day">Less than 24 hours</option>
+                            <option value="few-days">2-3 days</option>
+                            <option value="week">1 week</option>
+                            <option value="two-weeks">2 weeks</option>
+                            <option value="month">1 month</option>
+                            <option value="more">More than a month</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medicine">Are you taking any medicines? *</label>
+                        <select id="medicine" name="medicine" required>
+                            <option value="">-- Select --</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">I agree to be contacted for consultation</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">📤 Submit Inquiry</button>
+                </form>
+                
+                <div class="inquiry-info">
+                    <h3>Why Submit Your Inquiry?</h3>
+                    <ul class="inquiry-benefits">
+                        <li>✓ Get personalized health guidance</li>
+                        <li>✓ Quick response from Dr. Prasad</li>
+                        <li>✓ Prepare for your visit with all details</li>
+                        <li>✓ Understand your health better</li>
+                        <li>✓ Professional medical advice</li>
+                    </ul>
+                    <div class="inquiry-note">
+                        <strong>⚡ Emergency?</strong><br>
+                        Call immediately: <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
