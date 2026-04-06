@@ -9,33 +9,49 @@ A modern, clean, and fully responsive website for Dr. L. B. Prasad Clinic - a ge
 - **Fast Loading** - Pure HTML and CSS with minimal JavaScript
 - **SEO Friendly** - Proper semantic HTML structure
 - **Accessibility** - Alt text for images and proper heading hierarchy
+- **Health Discussion Forum** - Vibrant community space for health discussions
 - **Interactive Elements**:
   - Sticky WhatsApp floating button
   - Smooth navigation scrolling
   - Hover effects on buttons and cards
   - Scroll animations
+  - Forum search functionality
+  - Category filtering
 
 ## 📁 Project Structure
 
 ```
 clinic/
-├── index.html          # Main HTML file
-├── style.css          # Stylesheet
-├── README.md          # Project documentation
-├── LICENSE            # MIT License
-└── .gitignore         # Git ignore file
+├── index.html          # Main HTML file with clinic information
+├── forum.html          # Health discussion forum page
+├── style.css           # Stylesheet (shared across pages)
+├── README.md           # Project documentation
+├── LICENSE             # MIT License
+└── .gitignore          # Git ignore file
 ```
 
 ## 🎨 Website Sections
 
+### Main Website (index.html)
 1. **Navigation Bar** - Sticky navbar with logo and navigation links
 2. **Hero Section** - Eye-catching header with clinic name and CTA buttons
 3. **About Doctor** - Information about Dr. L. B. Prasad with profile image
 4. **Services** - 6 medical services with icons
 5. **Testimonials** - Patient reviews and feedback
 6. **Call-to-Action** - Persuasive section encouraging consultations
-7. **Contact Section** - Contact information with embedded Google Maps
-8. **Footer** - Copyright and clinic information
+7. **Inquiry Form** - Patient form to describe health concerns
+8. **Contact Section** - Contact information with embedded Google Maps
+9. **Footer** - Copyright and clinic information
+
+### Forum (forum.html)
+1. **Forum Hero** - Eye-catching header introducing the forum
+2. **Forum Sidebar** - Category filtering and forum statistics
+3. **Forum Search** - Search discussions by keywords
+4. **Discussion Threads** - Sample health discussions with engagement metrics
+5. **Pinned Threads** - Important announcements and guidelines
+6. **New Discussion Form** - Allow users to start new health discussions
+7. **Popular Indicators** - Highlight popular and trending discussions
+8. **Community Guidelines** - Important reminders about forum usage
 
 ## 📞 Contact Information
 
@@ -129,8 +145,9 @@ Edit `style.css` and update color values:
 
 ## 📄 File Information
 
-- **index.html** - 786 lines - Main HTML structure
-- **style.css** - 500+ lines - Complete stylesheet
+- **index.html** - 360 lines - Main clinic website
+- **forum.html** - 350+ lines - Health discussion forum
+- **style.css** - 1800+ lines - Complete stylesheet with forum styles
 - **README.md** - Documentation
 - **LICENSE** - MIT License
 - **.gitignore** - Git configuration
@@ -184,6 +201,11 @@ Edit `style.css` and update color values:
 
 ## 📈 Future Enhancements
 
+- [ ] Forum backend integration (database for storing discussions)
+- [ ] User authentication for forum (register/login)
+- [ ] Forum comment system with nested replies
+- [ ] User profiles and reputation system
+- [ ] Email notifications for forum updates
 - [ ] Online appointment booking system
 - [ ] Patient review system
 - [ ] Blog section for health tips
