@@ -183,6 +183,22 @@ navbar {
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
 }
 
+.btn-inquiry {
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    color: white;
+    border: none;
+}
+
+.btn-inquiry:hover {
+    background: linear-gradient(135deg, #229954 0%, #1e8449 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(39, 174, 96, 0.4);
+}
+
+.btn-inquiry:active {
+    transform: translateY(-1px);
+}
+
 /* Large Desktops (1920px and above) */
 @media (min-width: 1920px) {
     .hero {

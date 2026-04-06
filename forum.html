@@ -238,7 +238,27 @@
             <h2>Start a New Discussion</h2>
             <p class="section-subtitle">Share your health question or experience with our community</p>
             
-            <form class="new-thread-form" id="newThreadForm">
+            <form class="new-thread-form" id="newThreadForm" action="https://formspree.io/f/xyzabjkd" method="POST">
+                <div class="form-group">
+                    <label for="thread-name">Your Name *</label>
+                    <input type="text" id="thread-name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="thread-email">Email Address *</label>
+                    <input type="email" id="thread-email" name="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="thread-phone">Phone Number (Optional)</label>
+                    <input type="tel" id="thread-phone" name="phone" placeholder="+91 98765 43210">
+                </div>
+
+                <div class="form-group">
+                    <label for="thread-age">Age *</label>
+                    <input type="number" id="thread-age" name="age" min="1" max="120" placeholder="Your age" required>
+                </div>
+
                 <div class="form-group">
                     <label for="thread-title">Discussion Title *</label>
                     <input type="text" id="thread-title" name="title" placeholder="What's your question or topic?" required>
@@ -246,7 +266,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="thread-category">Category *</label>
+                    <label for="thread-category">Health Category *</label>
                     <select id="thread-category" name="category" required>
                         <option value="">-- Select a category --</option>
                         <option value="fever">Fever & Cold</option>
@@ -254,27 +274,59 @@
                         <option value="bp">Blood Pressure</option>
                         <option value="headache">Headaches</option>
                         <option value="digestion">Digestion Issues</option>
+                        <option value="infection">Infection</option>
+                        <option value="allergy">Allergy</option>
                         <option value="other">Other Health Topics</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="thread-content">Your Question/Experience *</label>
-                    <textarea id="thread-content" name="content" placeholder="Describe your health concern or share your experience. Be as detailed as possible..." rows="8" required></textarea>
-                    <small>This helps others provide better suggestions</small>
+                    <label for="thread-duration">How long have you had this problem? *</label>
+                    <select id="thread-duration" name="duration" required>
+                        <option value="">-- Select duration --</option>
+                        <option value="less-than-day">Less than 24 hours</option>
+                        <option value="few-days">2-3 days</option>
+                        <option value="week">1 week</option>
+                        <option value="two-weeks">2 weeks</option>
+                        <option value="month">1 month</option>
+                        <option value="more">More than a month</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="thread-severity">Severity Level *</label>
+                    <select id="thread-severity" name="severity" required>
+                        <option value="">-- Select severity --</option>
+                        <option value="mild">Mild (Manageable)</option>
+                        <option value="moderate">Moderate (Affects daily life)</option>
+                        <option value="severe">Severe (Urgent attention needed)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="thread-content">Describe Your Problem in Detail *</label>
+                    <textarea id="thread-content" name="description" placeholder="Describe your symptoms, duration, what you've tried, and any other relevant information..." rows="8" required></textarea>
+                    <small>This helps Dr. Prasad prioritize and provide better guidance</small>
                 </div>
 
                 <div class="form-group checkbox">
                     <input type="checkbox" id="thread-agree" name="agree" required>
-                    <label for="thread-agree">I agree to the forum guidelines and privacy policy</label>
+                    <label for="thread-agree">I agree to the forum guidelines and give permission to Dr. Prasad to review my concern</label>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-large">📤 Post Discussion</button>
+                <button type="submit" class="btn btn-primary btn-large">📤 Post Discussion & Submit to Doctor</button>
             </form>
 
             <div class="form-info">
                 <h3>⚠️ Important Reminder</h3>
-                <p><strong>This forum is for discussion and community support only.</strong> The information shared here is not a substitute for professional medical advice. Always consult Dr. Prasad for personalized diagnosis and treatment. In case of emergency, call immediately: <a href="tel:+919876543210"><strong>+91 98765 43210</strong></a></p>
+                <p><strong>Your submission will be:</strong></p>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li>✓ Recorded and reviewed by Dr. Prasad</li>
+                    <li>✓ Prioritized based on severity</li>
+                    <li>✓ Kept confidential and secure</li>
+                    <li>✓ Responded to via email/call</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>For emergency situations:</strong> Call immediately: <a href="tel:+919876543210"><strong>+91 98765 43210</strong></a></p>
             </div>
         </div>
     </section>
@@ -336,10 +388,9 @@
         const newThreadForm = document.getElementById('newThreadForm');
         if (newThreadForm) {
             newThreadForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you! Your discussion has been posted. The community can now see and respond to your question.');
-                this.reset();
-                window.location.href = '#forum-main';
+                // Let Formspree handle the submission
+                // This alert will show before form submits
+                alert('Thank you! Your concern has been submitted to Dr. Prasad. He will review and prioritize based on severity. You will receive an email confirmation shortly.');
             });
         }
 
