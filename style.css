@@ -59,6 +59,22 @@ navbar {
     opacity: 0.8;
 }
 
+/* Tablets & Medium Screens */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small Tablets & Phones */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -66,6 +82,25 @@ navbar {
     
     .nav-container {
         padding: 0 1rem;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.3rem;
     }
 }
 
@@ -148,30 +183,146 @@ navbar {
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.4);
 }
 
-@media (max-width: 768px) {
+/* Large Desktops (1920px and above) */
+@media (min-width: 1920px) {
     .hero {
-        padding: 60px 1rem;
+        padding: 150px 2rem;
+        min-height: 700px;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .hero p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Standard Desktops */
+@media (max-width: 1200px) and (min-width: 1024px) {
+    .hero {
+        padding: 100px 2rem;
+        min-height: 550px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets & Medium Screens */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 80px 1.5rem;
         min-height: 500px;
     }
     
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
     }
     
     .hero p {
         font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .btn {
+        padding: 14px 35px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 1rem;
+        min-height: 450px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
     
     .btn {
-        width: 85%;
+        width: 90%;
         max-width: 350px;
         padding: 14px 30px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Phones (480px to 768px) */
+@media (max-width: 600px) {
+    .hero {
+        padding: 50px 1rem;
+        min-height: 400px;
+    }
+    
+    .hero h1 {
+        font-size: 1.7rem;
+        margin-bottom: 0.8rem;
+        letter-spacing: 0;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Phones (Below 480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0.75rem;
+        min-height: 350px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .hero p {
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .cta-buttons {
+        gap: 0.8rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 11px 20px;
+        font-size: 0.85rem;
+        letter-spacing: 0;
     }
 }
 
@@ -193,6 +344,66 @@ section h2 {
     color: #2c3e50;
     text-align: center;
     font-weight: 700;
+}
+
+/* Large Desktops */
+@media (min-width: 1920px) {
+    section {
+        padding: 100px 2rem;
+    }
+    
+    section h2 {
+        font-size: 3.2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    section {
+        padding: 60px 1.5rem;
+    }
+    
+    section h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 1rem;
+    }
+    
+    section h2 {
+        font-size: 1.9rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    section {
+        padding: 40px 0.75rem;
+    }
+    
+    section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+    section {
+        padding: 30px 0.75rem;
+    }
+    
+    section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
 }
 
 /* About Doctor Section */
@@ -265,18 +476,117 @@ section h2 {
     font-size: 1.4rem;
 }
 
+/* Tablets */
+@media (max-width: 1024px) {
+    .about-content {
+        gap: 2.5rem;
+    }
+    
+    .about-text h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .about-text p {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .points li {
+        padding: 0.8rem 0;
+        padding-left: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Tablets & Large Phones */
 @media (max-width: 768px) {
+    .about-doctor {
+        padding: 50px 1rem;
+    }
+    
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
     .about-image img {
-        max-width: 250px;
+        max-width: 280px;
     }
     
-    section h2 {
-        font-size: 1.8rem;
+    .about-text h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about-text p {
+        margin-bottom: 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    .points li {
+        padding: 0.7rem 0;
+        padding-left: 30px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .about-doctor {
+        padding: 40px 0.75rem;
+    }
+    
+    .about-image img {
+        max-width: 220px;
+    }
+    
+    .about-text h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .about-text p {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .points li {
+        padding: 0.6rem 0;
+        padding-left: 28px;
+        font-size: 0.9rem;
+    }
+    
+    .points li:before {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+    .about-doctor {
+        padding: 30px 0.75rem;
+    }
+    
+    .about-image img {
+        max-width: 180px;
+    }
+    
+    .about-text h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .about-text p {
+        margin-bottom: 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .points li {
+        padding: 0.5rem 0;
+        padding-left: 25px;
+        font-size: 0.85rem;
     }
 }
 
@@ -331,6 +641,86 @@ section h2 {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.7;
+}
+
+/* Services Section - Responsive */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 50px 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 2rem 1.5rem;
+        border-top: 4px solid #3498db;
+    }
+    
+    .service-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        padding: 40px 0.75rem;
+    }
+    
+    .services-grid {
+        gap: 1.2rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .service-icon {
+        font-size: 2.2rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    .service-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        padding: 1.2rem 1rem;
+    }
+    
+    .service-icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1rem;
+    }
 }
 
 /* Testimonials Section */
@@ -400,6 +790,7 @@ section h2 {
     justify-content: center;
     font-size: 1.8rem;
     border: 2px solid rgba(255, 255, 255, 0.4);
+    flex-shrink: 0;
 }
 
 .author-info h4 {
@@ -412,6 +803,98 @@ section h2 {
     margin: 0;
     font-size: 0.85rem;
     opacity: 0.85;
+}
+
+/* Testimonials Section - Responsive */
+@media (max-width: 1024px) {
+    .testimonials {
+        padding: 60px 1.5rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 50px 1rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .testimonial-stars {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .author-avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+    
+    .author-info h4 {
+        font-size: 0.95rem;
+    }
+    
+    .author-info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials {
+        padding: 40px 0.75rem;
+    }
+    
+    .testimonials-grid {
+        gap: 1.2rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+    
+    .author-avatar {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        padding: 1.2rem 1rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+    
+    .author-avatar {
+        width: 42px;
+        height: 42px;
+    }
 }
 
 /* Contact Section */
@@ -511,96 +994,194 @@ section h2 {
     border: none;
 }
 
+/* Contact Section - Responsive (CRITICAL FOR CONVERSION) */
+@media (max-width: 1024px) {
+    .contact {
+        padding: 60px 1.5rem;
+    }
+    
+    .contact-content {
+        gap: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .contact {
+        padding: 50px 1rem;
+    }
+    
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
+    .contact-info {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-item {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .contact-item strong {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contact-item a {
+        font-size: 1rem;
+    }
+    
+    .contact-item p {
+        font-size: 0.95rem;
+    }
+    
+    .contact-buttons {
+        gap: 0.8rem;
+    }
+    
+    .contact-buttons a {
+        min-width: 140px;
+        padding: 14px 25px;
+    }
+    
     .map-container {
-        height: 300px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 40px 0.75rem;
+    }
+    
+    .contact-info {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .contact-item {
+        margin-bottom: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .contact-item strong {
+        font-size: 0.95rem;
+    }
+    
+    .contact-item a {
+        font-size: 0.95rem;
     }
     
     .contact-buttons {
         flex-direction: column;
+        gap: 0.8rem;
     }
     
     .contact-buttons a {
         width: 100%;
+        min-width: auto;
+        padding: 13px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .map-container {
+        height: 300px;
     }
 }
 
-/* CTA Section */
-.cta-section {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-    color: white;
-    padding: 80px 2rem;
-    text-align: center;
+@media (max-width: 480px) {
+    .contact {
+        padding: 30px 0.75rem;
+    }
+    
+    .contact-info {
+        padding: 1.2rem 1rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-item {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .contact-item strong {
+        font-size: 0.9rem;
+    }
+    
+    .contact-buttons a {
+        padding: 12px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .map-container {
+        height: 250px;
+    }
 }
 
-.cta-section h2 {
-    color: white;
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem;
-}
-
-.cta-section p {
-    font-size: 1.15rem;
-    margin-bottom: 2.5rem;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.7;
-}
-
-/* Footer */
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Floating WhatsApp Button */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 65px;
-    height: 65px;
-    background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 99;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.15);
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.7);
-}
-
-.whatsapp-btn:active {
-    transform: scale(0.95);
-}
-
+/* Footer - Responsive */
 @media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 1rem;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem 0.75rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
+
+/* Floating WhatsApp Button - Responsive & Touch-Friendly */
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 600px) {
     .whatsapp-btn {
         width: 55px;
         height: 55px;
         font-size: 1.5rem;
         bottom: 20px;
         right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        bottom: 15px;
+        right: 15px;
     }
 }
 
@@ -611,4 +1192,33 @@ footer p {
 
 .mt-3 {
     margin-top: 3rem;
+}
+
+/* CTA Buttons within sections */
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: none;
+    }
 }
