@@ -1,6 +1,17 @@
 # Dr. L. B. Prasad Clinic Website
 
-A modern, clean, and fully responsive website for Dr. L. B. Prasad Clinic - a general physician practice in Greater Noida, Uttar Pradesh.
+A modern, professional, and fully responsive **Hybrid Approach** website for Dr. L. B. Prasad Clinic - a general physician practice in Greater Noida, Uttar Pradesh.
+
+**🌐 LIVE WEBSITE:** https://see-berozgar-here.github.io/clinic/
+
+## 🎯 Hybrid Approach Features
+
+✨ **Single Home Page** - Clean overview with "Learn More →" buttons  
+✨ **8 Service Detail Pages** - Comprehensive information for each service  
+✨ **Professional Images** - Medical backgrounds and doctor photos  
+✨ **Responsive Design** - Perfect on all devices  
+✨ **Forum Section** - Patient community discussions  
+✨ **Multiple Contact Methods** - Phone, WhatsApp, Inquiry Form  
 
 ## 🌐 Features
 
@@ -10,11 +21,14 @@ A modern, clean, and fully responsive website for Dr. L. B. Prasad Clinic - a ge
 - **SEO Friendly** - Proper semantic HTML structure
 - **Accessibility** - Alt text for images and proper heading hierarchy
 - **Health Discussion Forum** - Vibrant community space for health discussions
+- **Service Detail Pages** - 8 comprehensive service pages with "Learn More" buttons
+- **Professional Images** - Unsplash medical and healthcare photos
 - **Interactive Elements**:
   - Sticky WhatsApp floating button
   - Smooth navigation scrolling
   - Hover effects on buttons and cards
   - Scroll animations
+  - FAQ accordions
   - Forum search functionality
   - Category filtering
 
@@ -22,36 +36,64 @@ A modern, clean, and fully responsive website for Dr. L. B. Prasad Clinic - a ge
 
 ```
 clinic/
-├── index.html          # Main HTML file with clinic information
-├── forum.html          # Health discussion forum page
-├── style.css           # Stylesheet (shared across pages)
-├── README.md           # Project documentation
-├── LICENSE             # MIT License
-└── .gitignore          # Git ignore file
+├── index.html                          # Main website home page
+├── forum.html                          # Health discussion forum
+├── style.css                           # Stylesheet (all pages)
+├── services/                           # Service detail pages
+│   ├── opd.html                       # OPD (General Medicine)
+│   ├── fever-cold.html                # Fever, Cold & Infections
+│   ├── diabetes.html                  # Diabetes Management
+│   ├── blood-pressure.html            # Blood Pressure Care
+│   ├── preventive-care.html           # Preventive Health Checkups
+│   ├── diagnostics.html               # Lab Collection & Diagnostics
+│   ├── vaccination.html               # Adult Vaccination
+│   └── ecg.html                       # ECG & Cardiac Care
+├── README.md                           # This file
+├── LICENSE                             # MIT License
+└── .gitignore                          # Git ignore file
 ```
 
 ## 🎨 Website Sections
 
 ### Main Website (index.html)
 1. **Navigation Bar** - Sticky navbar with logo and navigation links
-2. **Hero Section** - Eye-catching header with clinic name and CTA buttons
-3. **About Doctor** - Information about Dr. L. B. Prasad with profile image
-4. **Services** - 6 medical services with icons
-5. **Testimonials** - Patient reviews and feedback
-6. **Call-to-Action** - Persuasive section encouraging consultations
-7. **Inquiry Form** - Patient form to describe health concerns
-8. **Contact Section** - Contact information with embedded Google Maps
-9. **Footer** - Copyright and clinic information
+2. **Hero Section** - Professional background image with CTA buttons
+3. **About Doctor** - Information with high-quality doctor photo
+4. **Services** - 8 medical services with "Learn More →" buttons
+5. **Service Detail Pages** - Click "Learn More" to access detailed service pages
+6. **Gallery** - Health tips and medical infographics
+7. **Testimonials** - Patient reviews and feedback
+8. **FAQ** - 6 common questions with accordion toggles
+9. **Inquiry Form** - Patient health concern submission form
+10. **Forum** - Health discussion community
+11. **Contact Section** - Contact information with Google Maps
+12. **Footer** - Quick links and clinic information
+
+### Service Detail Pages (services/)
+Each service has a dedicated page with:
+- Service hero section with background image
+- Detailed service description
+- Benefits and features list
+- Conditions treated
+- Call-to-action buttons for booking
+- Contact information
+- Back to services link
+
+**Services:**
+1. OPD (General Medicine) - `services/opd.html`
+2. Fever, Cold & Infections - `services/fever-cold.html`
+3. Diabetes Management - `services/diabetes.html`
+4. Blood Pressure Care - `services/blood-pressure.html`
+5. Preventive Health Checkups - `services/preventive-care.html`
+6. Lab Collection & Diagnostics - `services/diagnostics.html`
+7. Adult Vaccination - `services/vaccination.html`
+8. ECG & Cardiac Care - `services/ecg.html`
 
 ### Forum (forum.html)
 1. **Forum Hero** - Eye-catching header introducing the forum
 2. **Forum Sidebar** - Category filtering and forum statistics
 3. **Forum Search** - Search discussions by keywords
 4. **Discussion Threads** - Sample health discussions with engagement metrics
-5. **Pinned Threads** - Important announcements and guidelines
-6. **New Discussion Form** - Allow users to start new health discussions
-7. **Popular Indicators** - Highlight popular and trending discussions
-8. **Community Guidelines** - Important reminders about forum usage
 
 ## 📞 Contact Information
 
@@ -59,6 +101,34 @@ clinic/
 - **Phone**: +91 98765 43210 (Placeholder - Update with actual number)
 - **Clinic Timings**: 9:00 AM – 8:00 PM (Monday - Sunday)
 - **WhatsApp**: Available for quick consultations
+
+## 🌐 LIVE WEBSITE LINKS
+
+### Main Website
+```
+🔗 https://see-berozgar-here.github.io/clinic/
+```
+
+### Service Detail Pages
+Access all service pages via "Learn More →" buttons on the home page or directly:
+- OPD: `https://see-berozgar-here.github.io/clinic/services/opd.html`
+- Fever/Cold: `https://see-berozgar-here.github.io/clinic/services/fever-cold.html`
+- Diabetes: `https://see-berozgar-here.github.io/clinic/services/diabetes.html`
+- Blood Pressure: `https://see-berozgar-here.github.io/clinic/services/blood-pressure.html`
+- Preventive Care: `https://see-berozgar-here.github.io/clinic/services/preventive-care.html`
+- Diagnostics: `https://see-berozgar-here.github.io/clinic/services/diagnostics.html`
+- Vaccination: `https://see-berozgar-here.github.io/clinic/services/vaccination.html`
+- ECG: `https://see-berozgar-here.github.io/clinic/services/ecg.html`
+
+### Health Forum
+```
+🔗 https://see-berozgar-here.github.io/clinic/forum.html
+```
+
+### GitHub Repository
+```
+🔗 https://github.com/see-berozgar-here/clinic
+```
 
 ## 🚀 Getting Started
 
